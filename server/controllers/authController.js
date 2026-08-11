@@ -3,7 +3,11 @@ exports.getAuth = (req,res)=>{
 }
 
 exports.register = (req,res)=>{
-    res.send("Register Route Working");
+    console.log(req.body);
+    res.json({
+        "sucess":true,
+        "message":"Registration Is Sucessfully completed"
+    });
 }
 
 exports.login = (req,res)=>{
